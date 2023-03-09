@@ -1,0 +1,13 @@
+body {
+    background-color: #eceff1;
+}
+
+#logo img {
+    height: 8vh;
+    padding-left: 18vh;
+}
+
+
+#form-question {
+    margin-top: 5vh;
+}
