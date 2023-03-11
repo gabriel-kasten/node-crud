@@ -20,11 +20,12 @@ app.get('/create', (req, res) => {
 })
 
 app.post('/save', (req, res) => {
-    res.send('Formulário recebido!');
+    var title = req.body.title;
+    var description = req.body.description;
+
+    res.send(`Título: ${title}, Descrição: ${description}`);
 })
 
 app.listen(PORT, () => {
-    console.log(`
-        O servidor está rodando na porta ${PORT}!
-    `);
+    console.log(`O servidor está rodando na porta ${PORT}!`);
 })
